@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="test" company="" webLink="http://" view-date="2023-09-24" view-index="0" gantt-divider-location="366" resource-divider-location="283" version="3.2.3247" locale="en_US">
+    <description/>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Name" width="209" order="0"/>
+        <field id="tpd4" name="Begin date" width="78" order="1"/>
+        <field id="tpd5" name="End date" width="78" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[2,8]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#00ff00 #f4f4f4 #66ffcc #ff0000 #00ffff #00ff33 #0066ff #00ff99 #c4302b #6666ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="182" order="0"/>
+        <field id="1" name="Default role" width="97" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="Website Development" color="#ff0000" shape="0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0" meeting="false" project="true" start="2023-10-09" duration="45" complete="44" thirdDate="2023-11-20" thirdDate-constraint="0" priority="4" expand="true">
+            <task id="7" name="Documentation" color="#66ffcc" meeting="false" start="2023-10-09" duration="4" complete="100" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="Analysing Resources Available" color="#8cb6ce" meeting="false" start="2023-10-13" duration="2" complete="57" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="Coding" color="#8cb6ce" meeting="true" start="2023-10-17" duration="0" complete="47" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                <task id="9" name="Creating Front End" color="#8cb6ce" meeting="false" start="2023-10-17" duration="13" complete="77" thirdDate="2023-09-29" thirdDate-constraint="0" priority="4" expand="true">
+                    <depend id="11" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="11" name="Creating Back End" color="#8cb6ce" meeting="false" start="2023-11-03" duration="17" complete="25" thirdDate="2023-10-31" thirdDate-constraint="0" priority="4" expand="true">
+                    <depend id="16" type="2" difference="0" hardness="Strong"/>
+                    <depend id="17" type="2" difference="0" hardness="Strong"/>
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="16" name="Testing" color="#8cb6ce" meeting="true" start="2023-11-28" duration="0" complete="28" thirdDate="2023-10-23" thirdDate-constraint="0" priority="2" expand="true">
+                <task id="17" name="Integration Testing" color="#8cb6ce" meeting="false" start="2023-11-28" duration="4" complete="65" thirdDate="2023-11-28" thirdDate-constraint="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="18" name="Alpha/Beta testing" color="#8cb6ce" meeting="false" start="2023-11-28" duration="5" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="13" name="Final Review" color="#8cb6ce" meeting="false" start="2023-12-05" duration="4" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="6" name="Anshuman" function="Default:1" contacts="" phone=""/>
+        <resource id="10" name="Madhur" function="1" contacts="" phone=""/>
+        <resource id="11" name="Vedant" function="2" contacts="" phone=""/>
+        <resource id="12" name="Suraj" function="3" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="6" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="6" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="6" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="6" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="10" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="11" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="12" function="3" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous>
+        <previous-tasks name="">
+            <previous-task id="2" start="2023-10-09" duration="45" meeting="false" super="true"/>
+            <previous-task id="7" start="2023-10-09" duration="4" meeting="false" super="false"/>
+            <previous-task id="8" start="2023-10-13" duration="2" meeting="false" super="false"/>
+            <previous-task id="10" start="2023-10-17" duration="0" meeting="true" super="true"/>
+            <previous-task id="9" start="2023-10-17" duration="13" meeting="false" super="false"/>
+            <previous-task id="11" start="2023-11-03" duration="17" meeting="false" super="false"/>
+            <previous-task id="16" start="2023-11-28" duration="0" meeting="true" super="true"/>
+            <previous-task id="17" start="2023-11-28" duration="4" meeting="false" super="false"/>
+            <previous-task id="18" start="2023-11-28" duration="5" meeting="false" super="false"/>
+            <previous-task id="13" start="2023-12-05" duration="4" meeting="false" super="false"/>
+        </previous-tasks>
+        <previous-tasks name="egegg">
+            <previous-task id="2" start="2023-10-09" duration="45" meeting="false" super="true"/>
+            <previous-task id="7" start="2023-10-09" duration="4" meeting="false" super="false"/>
+            <previous-task id="8" start="2023-10-13" duration="2" meeting="false" super="false"/>
+            <previous-task id="10" start="2023-10-17" duration="0" meeting="true" super="true"/>
+            <previous-task id="9" start="2023-10-17" duration="13" meeting="false" super="false"/>
+            <previous-task id="11" start="2023-11-03" duration="17" meeting="false" super="false"/>
+            <previous-task id="16" start="2023-11-28" duration="0" meeting="true" super="true"/>
+            <previous-task id="17" start="2023-11-28" duration="4" meeting="false" super="false"/>
+            <previous-task id="18" start="2023-11-28" duration="5" meeting="false" super="false"/>
+            <previous-task id="13" start="2023-12-05" duration="4" meeting="false" super="false"/>
+        </previous-tasks>
+    </previous>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Front End Coder"/>
+        <role id="2" name="Back End Coder"/>
+        <role id="3" name="Tester"/>
+        <role id="4" name=""/>
+    </roles>
+</project>
